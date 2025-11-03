@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EX FinSite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">EX<span>FINANCIAL</span></div>
+  <nav>
+    <a href="#">Automatic Exchange</a>
+    <a href="#">Open Visa Card</a>
+    <a href="#">FAQ</a>
+  </nav>
+  <div class="flags">
+    <img src="https://flagcdn.com/w20/us.png" alt="US">
+    <img src="https://flagcdn.com/w20/eu.png" alt="EU">
+  </div>
+</header>
+<main class="exchange-container">
+  <h1>Exchange Cryptocurrency</h1>
+  <div class="form">
+    <div class="field">
+      <label for="fromAmount">You give</label>
+      <input type="number" id="fromAmount" placeholder="0.0">
+      <select id="fromCurrency">
+        <option value="BTC">Bitcoin (BTC)</option>
+        <option value="ETH">Ethereum (ETH)</option>
+        <option value="USDT">Tether (USDT)</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="toAmount">You receive</label>
+      <input type="text" id="toAmount" placeholder="0.0" readonly>
+      <select id="toCurrency">
+        <option value="ETH">Ethereum (ETH)</option>
+        <option value="BTC">Bitcoin (BTC)</option>
+        <option value="USDT">Tether (USDT)</option>
+      </select>
+    </div>
+    <button id="convert">Convert</button>
+  </div>
+</main>
+<footer class="footer">
+  <a href="#">Terms</a>
+  <a href="#">AML</a>
+  <a href="#">Privacy</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
